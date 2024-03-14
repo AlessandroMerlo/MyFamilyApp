@@ -1,0 +1,4 @@
+enum DatabaseCallStatus {
+  ok,
+  error,
+}
