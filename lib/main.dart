@@ -18,7 +18,7 @@ import 'screens/user/login_screen.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  FirebaseDatabase.instance.setPersistenceEnabled(true);
+  FirebaseDatabase.instance.setPersistenceEnabled(true); //prova
   await loadUsers();
   tz.initializeTimeZones();
   ofa.OpenFoodAPIConfiguration.userAgent = ofa.UserAgent(name: 'my_family_app');
